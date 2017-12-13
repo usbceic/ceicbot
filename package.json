@@ -1,0 +1,26 @@
+{
+  "name": "ceicbot",
+  "version": "1.0.0",
+  "description": "Bot de telegram para uso de la JD-CEIC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usbceic/ceicbot.git"
+  },
+  "keywords": [
+    "bot",
+    "telegrambot",
+    "ceic",
+    "USB",
+    "javascript"
+  ],
+  "author": "German Robayo <germanrobayo33@gmail.com> (https://german1608.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/usbceic/ceicbot/issues"
+  },
+  "homepage": "https://github.com/usbceic/ceicbot#readme"
+}
