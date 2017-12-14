@@ -4,6 +4,7 @@ dist/
 *.map
 *.log
 *.swp
+*.env
 coverage/
 TODO.md
 Session.vim
