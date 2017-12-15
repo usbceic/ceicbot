@@ -4,7 +4,7 @@
   "description": "Bot de telegram para uso de la JD-CEIC",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_ENV=env nodemon index.js"
   },
   "engines": {
     "node": ">= 8.0",
@@ -28,6 +28,8 @@
   },
   "homepage": "https://github.com/usbceic/ceicbot#readme",
   "devDependencies": {
+    "dotenv": "^4.0.0",
+    "nodemon": "^1.12.7",
     "standard": "^10.0.3"
   },
   "dependencies": {
