@@ -9,14 +9,16 @@ const composer = new Composer()
 const memberHandler = require('./miembros')
 const helpHandler = require('./help')
 const startHandler = require('./start')
+const pollHandler = require('./newpoll')
 
 /**
  * `composer` es un objeto del que extiende `telegraf`, todos los metodos para
  * handling de data de `Telegraf` vienen de `composer`. Asi, podemos usar
  * composer.on, composer.command, etc.
  */
-composer.command('start', startHandler)
+composer.hears(/\/start ?(.*)?/, startHandler)
 composer.command('miembros', memberHandler)
 composer.command('help', helpHandler)
+composer.command('newpoll', pollHandler)
 
 module.exports = composer
