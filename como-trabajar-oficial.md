@@ -4,11 +4,7 @@
 
 **IMPORTANTE**: Asegurate de que haber recibido y aceptado la invitación del
 equipo de tecnologia de la JD, en caso de que no haber recibido nada, por favor
-notificalo a cualquiera de los dos:
-
-@german1608 germanrobayo33@gmail.com  
-@gustavoaca1997 gustavoaca1997@gmail.com
-
+notificalo a traves de los madios de recepcion de informacion del CEIC
 Luego, sigue estos pasos:
 
 ```bash
