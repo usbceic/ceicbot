@@ -9,10 +9,14 @@
 # Date: October - 2019
 
 ###################### IMPORTS ##########################
- 
+
+# Externas 
 import telebot 
 from telebot import types  
 import time 
+
+# Internas
+from funciones import *
  
 ###################### VARIABLES ########################## 
  
@@ -21,3 +25,8 @@ TOKEN =  'Valor reservado para produccion'
 AYUDA = 'Ayuda del CEIC BOT'
  
 GRUPO = -XXXXXX 
+ 
+bot = telebot.TeleBot(TOKEN) # Creamos el objeto de nuestro bot.
+ 
+ 
+bot.set_update_listener(listener) # Así, le decimos al bot que utilice como función escuchadora nuestra función 'listener' declarada arriba.
