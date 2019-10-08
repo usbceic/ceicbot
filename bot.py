@@ -22,11 +22,15 @@ from funciones import *
  
 TOKEN =  'Valor reservado para produccion'
  
-AYUDA = 'Ayuda del CEIC BOT'
+AYUDA = 'Puedes utilizar los siguientes comandos : \n\n/ayuda - Guia para utilizar el bot. \n/info - Informacion De interes \n/hola - Informacion sobre USBCEIC \n\n'
  
 GRUPO = -XXXXXX 
- 
+
 bot = telebot.TeleBot(TOKEN) # Creamos el objeto de nuestro bot.
+
+@bot.message_handler(commands=['ayuda'])
  
  
 bot.set_update_listener(listener) # Así, le decimos al bot que utilice como función escuchadora nuestra función 'listener' declarada arriba.
+
+bot.polling(none_stop=True)
