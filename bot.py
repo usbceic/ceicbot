@@ -14,3 +14,10 @@ import telebot
 from telebot import types  
 import time 
  
+###################### VARIABLES ########################## 
+ 
+TOKEN =  'Valor reservado para produccion'
+ 
+AYUDA = 'Ayuda del CEIC BOT'
+ 
+GRUPO = -XXXXXX 
