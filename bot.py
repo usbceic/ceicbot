@@ -29,7 +29,15 @@ GRUPO = -XXXXXX
 bot = telebot.TeleBot(TOKEN) # Creamos el objeto de nuestro bot.
 
 @bot.message_handler(commands=['ayuda'])
- 
+@bot.message_handler(commands=['info']) # Indicamos que lo siguiente va a controlar el comando '/info'
+@bot.message_handler(commands=['saldo']) # Indicamos que lo siguiente va a controlar el comando '/info'
+
+## Mensajes de Lectura Inline
+@bot.message_handler(func=lambda message: message.text == "hola")
+@bot.message_handler(func=lambda message: message.text == "Que es esto")
+@bot.message_handler(func=lambda message: message.text == "Como lo uso")
+@bot.message_handler(func=lambda message: message.text == "Esto es una beta")
+
  
 bot.set_update_listener(listener) # Así, le decimos al bot que utilice como función escuchadora nuestra función 'listener' declarada arriba.
 
