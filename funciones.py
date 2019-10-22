@@ -7,7 +7,7 @@
 #
 # Date: October - 2019
 
-#Listener
+# Listener
  
 def listener(messages): 
     
@@ -24,4 +24,17 @@ def listener(messages):
         f.write(mensaje + "\n") # Escribimos la linea de log en el fichero. 
         f.close() # Cerramos el fichero para que se guarde. 
         
-        print mensaje # Imprimimos el mensaje en la terminal, que nunca viene mal :
+        print mensaje # Imprimimos el mensaje en la terminal, que nunca 
+
+#### COMANDOS DISPONIBLES
+
+# Ayuda 
+def command_ayuda(m): 
+ 
+    cid = m.chat.id # Guardamos el ID de la conversación para poder responder.
+ 
+    bot.send_chat_action(cid, 'typing') # Enviando ...
+ 
+    time.sleep(1) #La respuesta del bot tarda 1 segundo en ejecutarse
+ 
+    bot.send_message( cid, AYUDA) # Con la función 'send_message()' del bot, enviamos al ID almacenado el texto que queremos.
