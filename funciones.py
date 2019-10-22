@@ -44,3 +44,11 @@ def command_info(m): # Definimos una función que resuleva lo que necesitemos.
  
     else :
         bot.send_message( cid, 'mensaje B')
+
+
+### MENSAJES INLINE
+def command_text_hola(m):
+ 
+    time.sleep(1)
+ 
+    bot.send_message(m.chat.id, "Hola a ti tambien")
