@@ -36,3 +36,11 @@ def command_ayuda(m):
     bot.send_message( cid, AYUDA) # Con la función 'send_message()' del bot, enviamos al ID almacenado el texto que queremos.
 
 # Info
+def command_info(m): # Definimos una función que resuleva lo que necesitemos.
+    cid = m.chat.id # Guardamos el ID de la conversación para poder responder.
+
+    if cid == GRUPO:
+        bot.send_message( GRUPO, 'mensaje A') # Con la función 'send_message()' del bot, enviamos al ID almacenado el texto que queremos.
+ 
+    else :
+        bot.send_message( cid, 'mensaje B')
