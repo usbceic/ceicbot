@@ -30,6 +30,7 @@ bot = telebot.TeleBot(TOKEN) # Creamos el objeto de nuestro bot.
 
 @bot.message_handler(commands=['ayuda'])
 @bot.message_handler(commands=['info']) # Indicamos que lo siguiente va a controlar el comando '/info'
+@bot.message_handler(commands=['saldo']) # Indicamos que lo siguiente va a controlar el comando '/info'
 
 ## Mensajes de Lectura Inline
 @bot.message_handler(func=lambda message: message.text == "hola")

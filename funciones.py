@@ -45,10 +45,14 @@ def command_info(m): # Definimos una función que resuleva lo que necesitemos.
     else :
         bot.send_message( cid, 'mensaje B')
 
+# Saldo
+def command_saldo(m):
+    cid = m.chat.id # Guardamos el ID de la conversación para poder responder.
+    time.sleep(1)
+    bot.send_message(m.chat.id, "Esta funcion estara disponible en el siguiente release")
+
 
 ### MENSAJES INLINE
 def command_text_hola(m):
- 
     time.sleep(1)
- 
     bot.send_message(m.chat.id, "Hola a ti tambien")
