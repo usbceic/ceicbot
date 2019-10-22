@@ -56,3 +56,15 @@ def command_saldo(m):
 def command_text_hola(m):
     time.sleep(1)
     bot.send_message(m.chat.id, "Hola a ti tambien")
+    
+def command_text_Que_es_esto(m):
+    time.sleep(1)
+    bot.send_message(m.chat.id, "Es uno de los nuevos metodos de comunicacion del USBCEIC")
+
+def command_text_Como_lo_uso(m):
+    time.sleep(1)
+    bot.send_message(m.chat.id, "EScribe el comando /ayuda para ver las opciones disponibles y de que se trata el bot")
+
+def command_text_Esto_es_una_beta(m):
+    time.sleep(1)
+    bot.send_message(m.chat.id, "Si, efectivamente, es una beta que estara disponible hasta el siguiente release")
